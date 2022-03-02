@@ -1,0 +1,37 @@
+#jedan {
+  position: absolute;
+
+  top: 20px;
+  left: 40px;
+  background-color: rgb(133, 133, 133);
+  height: 800px;
+  width: 100px;
+  border-top: rgb(162, 206, 21);
+}
+
+#dva {
+  position: absolute;
+  left: 200px;
+  top: 20px;
+
+  background-color: rgb(223, 93, 93);
+  height: 800px;
+  width: 100px;
+}
+#tri {
+  position: absolute;
+  top: 20px;
+  left: 380px;
+  background-color: rgb(162, 206, 21);
+  height: 800px;
+  width: 100px;
+}
+
+#cetiri {
+  position: absolute;
+  top: 20px;
+  background-color: rgb(190, 70, 106);
+  height: 800px;
+  width: 100px;
+  left: 550px;
+}
