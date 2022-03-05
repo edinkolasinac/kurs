@@ -36,3 +36,8 @@
   width: 200px;
   right: 1100px;
 }
+#edo{
+  display: inline-block
+  color: blue;
+  background-color: brown;
+}

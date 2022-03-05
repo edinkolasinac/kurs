@@ -1,0 +1,14 @@
+#edo1 {
+  display: flex;
+  height: 5px;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-image: url(imp/grey.jpg);
+}
+
+#logo {
+  max-height: 93px;
+  width: 200px;
+}
