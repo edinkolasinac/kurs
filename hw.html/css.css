@@ -5,7 +5,13 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(226, 186, 7) 0%,
+    rgb(165, 61, 61) 100%
+  );
+}
 #text {
   text-align: center;
   margin-left: 22%;
@@ -62,7 +68,7 @@
   }
 
   .card {
-    width: 90%;
+    width: 4%;
     margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
