@@ -4,8 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Inconsolata", monospace;
-
-  background: linear-gradient(90deg, #3f2b83 0%, #1b2f8b 100%);
+  background-color: rgb(77, 77, 148);
 }
 
 /*    FIRST PAGE
@@ -34,7 +33,7 @@ nav ul li a {
   text-align: center;
 }
 nav ul li a:hover {
-  color: #58a58e;
+  color: #e43434;
   transition: 0.4s;
 }
 .name {
@@ -42,7 +41,9 @@ nav ul li a:hover {
   text-align: center;
   margin-top: 86px;
   font-size: 300%;
-  background: lightgreen;
+  background: rgb(62, 187, 62);
+  width: 40%;
+  margin-left: 30%;
 }
 .undername {
   color: rgb(207, 63, 20);
@@ -53,8 +54,8 @@ nav ul li a:hover {
   color: #04aa78;
 }
 #git {
-  width: 200px;
-  height: 140px;
+  width: 240px;
+  height: 150px;
   border-radius: 80%;
   display: inline-flex;
   float: left;
@@ -69,7 +70,8 @@ nav ul li a:hover {
   float: right;
   justify-content: center;
   margin-right: 35%;
-  background: lightgreen;
+
+  width: 200px;
 }
 
 #edu {
@@ -77,16 +79,61 @@ nav ul li a:hover {
   text-align: center;
   margin-top: 120px;
 }
-#nit {
-  display: flex;
+#uninp {
+  width: 226px;
+  border-radius: 80%;
+  height: 216px;
+  margin-left: 40%;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#uninp {
+  display: inline;
   margin-left: 55%;
   border-radius: 80%;
+  width: 250px;
+  height: 200px;
 }
-#uninp {
-  width: 276px;
+#nit {
   border-radius: 80%;
-  height: 260px;
-  display: flex;
-  margin-left: 36%;
-  margin-top: 0px;
+  margin-left: -710px;
+  width: 250px;
+  height: 200px;
+
+  display: inline;
+}
+.student {
+  text-align: center;
+  text-size-adjust: large;
+  left: 50px;
+}
+#contact {
+  color: rgb(243, 243, 243);
+  background: linear-gradient(to bottom right, #de26a0, #ffffff);
+  text-align: center;
+}
+#con {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+#insta {
+  width: 100px;
+  height: 110px;
+  border-radius: 80%;
+}
+#fb {
+  width: 100px;
+  height: 110px;
+  border-radius: 80%;
+}
+#cpp {
+  width: 200px;
+  height: 165px;
+  margin-left: 35%;
+}
+#c {
+  width: 190px;
+  height: 166px;
+  margin-left: 190px;
 }
