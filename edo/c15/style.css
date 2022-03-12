@@ -1,0 +1,58 @@
+#head {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  margin: 30px auto;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  width: 40%;
+  height: 240px;
+  display: flex;
+}
+
+.card > img {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  #head {
+    width: 80%;
+  }
+
+  #cards {
+    width: 100%;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #head {
+    width: 90%;
+  }
+
+  #cards {
+    width: 100%;
+  }
+
+  .card {
+    width: 90%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+  }
+}
