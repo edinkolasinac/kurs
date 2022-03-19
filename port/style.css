@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+nav {
+  height: 780px;
+  width: 100%;
+  background-image: url("/back.jpg");
+}
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+
+nav a {
+  color: rgb(243, 243, 243);
+  font-size: 19px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+label.logo {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  padding: 0 100px;
+  line-height: 80px;
+}
+label.text1 h1 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  line-height: 100px 350px;
+  padding-left: 350px;
+  padding-top: 100px;
+}
+label.text1 p {
+  font-size: 15px;
+}
+.btn p {
+  display: inline;
+  box-sizing: content-box 2px color rgb(255, 255, 255);
+  width: 30%;
+  height: 50px;
+  padding: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  line-height: 200px;
+  margin-left: 360px;
+  cursor: pointer;
+}
+.btn p:hover {
+  color: rgb(0, 0, 0);
+}
+.iphone img {
+  display: flex;
+  width: 250px;
+  height: 550px;
+  float: right;
+  overflow: hidden;
+}
+.iphone2 img {
+  display: flex;
+  width: 220px;
+  min-height: 535px;
+  padding-left: 146px 140px;
+  padding-top: 5%;
+  overflow: hidden;
+  float: left;
+}
