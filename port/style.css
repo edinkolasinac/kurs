@@ -76,3 +76,36 @@ label.text1 p {
   overflow: hidden;
   float: left;
 }
+#c1 {
+  font-family: serif;
+  text-align: center;
+  font-size: 55px;
+  color: rgb(42, 148, 180);
+}
+#c2 {
+  text-align: center;
+  font-size: 55px;
+  color: rgb(19, 158, 212);
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#velikaslika {
+  width: 800px;
+  height: 540px;
+  padding-left: 27%;
+  justify-content: center;
+  line-height: 120%;
+}
