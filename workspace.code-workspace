@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Discord-Bot",
+			"path": "..\\Discord-Bot"
+		},
+		{
+			"name": "kurs",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "kurs"
+	}
+}
