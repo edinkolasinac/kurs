@@ -1,12 +1,12 @@
 {
 	"folders": [
 		{
-			"name": "Discord-Bot",
-			"path": "..\\Discord-Bot"
-		},
-		{
 			"name": "kurs",
 			"path": "."
+		},
+		{
+			"name": "Discord-Bot",
+			"path": "..\\Discord-Bot"
 		}
 	],
 	"settings": {
