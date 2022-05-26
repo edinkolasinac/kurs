@@ -1,69 +1,44 @@
-const array = [
-    { id: 1, name: "Suad", address: { street: "Hotkovo", number: 22 } },
-    { id: 2, name: "Irfan", address: { street: "Prvog maja", number: 42 } },
-    { id: 3, name: "Ramiz", address: { street: "Potok", number: 21 } },
-    { id: 4, name: "Ahmed", address: { street: "Bukres", number: 25 } },
-    { id: 5, name: "Samil", address: { street: "Rifata budzovica", number: 27 } },
-    { id: 6, name: "Mejla", address: { street: "Hercegovacka", number: 28 } },
-    { id: 7, name: "Ajsa", address: { street: "Potok 2", number: 27 } },
-];
+// Program to illustrate the working of
+// public and private in C++ Class
 
-// const newArray = array.map((user, index) => {
-//   return user.address;
-// })
+#include <iostream>
+using namespace std;
 
-// const newArray = array
-//   .filter((user) => user.address.number > 25)
-//   .map((user) => user.address);
+class Room {
 
-// value/element, index, array
-// Array.prototype.newMap = function (callback) {
-//   let arr = [];
-//   for (let i = 0; i < this.length; i++) {
-//     const element = this[i];
+   private:
+    double length;
+    double breadth;
+    double height;
 
-//     const callbackResult = callback(element, i, this);
-//     arr.push(callbackResult);
-//   }
-//   return arr;
-// };
+   public:
 
-// [1, 2, 3].map((value) => value * 2);
-// [3, "sd"].newMap(() => undefined);
-
-// const newArray = array
-//   .filter((user) => user.address.number > 25)
-//   .map((user) => user.address);
-
-const newArray2 = array.reduce((result, value, index, array) => {
-    if (value.address.number > 25) {
-        result.push(value.address);
+    // function to initialize private variables
+    void initData(double len, double brth, double hgt) {
+        length = len;
+        breadth = brth;
+        height = hgt;
     }
-    return result;
-}, []);
 
-// [1, 2, 3, 4, 5, 6].reduce((result, value) => {
-//   return result + value;
-// });
-
-Array.prototype.newReduce = function (callback, initialValue) {
-    let result = initialValue ? initialValue : this[0];
-
-    for (let i = 0; i < this.length; i++) {
-        const element = this[i];
-        if (initialValue) {
-            result = callback(result, element, i, this);
-            continue;
-        }
-
-        if (!initialValue && i === 0) {
-            continue;
-        }
-
-        result = callback(result, element, i, this);
+    double calculateArea() {
+        return length * breadth;
     }
-    return result;
+
+    double calculateVolume() {
+        return length * breadth * height;
+    }
 };
 
-const first = [1].newReduce((result, value) => result + value, 10);
-console.log(first);
+int main() {
+
+    // create object of Room class
+    Room room1;
+
+    // pass the values of private variables as arguments
+    room1.initData(42.5, 30.8, 19.2);
+
+    cout << "Area of Room =  " << room1.calculateArea() << endl;
+    cout << "Volume of Room =  " << room1.calculateVolume() << endl;
+
+    return 0;
+}
