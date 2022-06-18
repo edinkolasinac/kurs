@@ -1,22 +1,17 @@
-function same(arr1, arr2) {
-    if (arr1.length !== arr2.length) {
-        return false;
-    }
-    let frequencyCounter1 = {}
-    let frequencyCounter2 = {}
-    for (let val of arr1) {
-        frequencyCounter1[val] = (frequencyCounter1[val] || 0) + 1
-    }
-    for (let val of arr2) {
-        frequencyCounter2[val] = (frequencyCounter2[val] || 0) + 1
-    }
-    for (let key in frequencyCounter1) {
-        if (!(key ** 2 in frequencyCounter2)) {
-            return false
-        }
-        if (frequencyCounter2[key ** 2] !== frequencyCounter1[key]) {
-            return false
-        }
-    }
-    return true;
+// Traditional Anonymous Function
+function (a) {
+    return a + 100;
 }
+
+// Arrow Function Break Down
+
+// 1. Remove the word "function" and place arrow between the argument and opening body bracket
+(a) => {
+    return a + 100;
+}
+
+// 2. Remove the body braces and word "return" -- the return is implied.
+(a) => a + 100;
+
+// 3. Remove the argument parentheses
+a => a + 100;
