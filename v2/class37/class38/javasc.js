@@ -1,17 +1,19 @@
-// Traditional Anonymous Function
-function (a) {
-    return a + 100;
+function pyramid(n) {
+
+
+
+    for (let i = 1; i <= n; i++) {
+
+        let str = ' '.repeat(n - i);
+
+        let str2 = '*'.repeat(i * 2 - 1)
+
+
+
+        console.log(str + str2 + str);
+
+    }
+
 }
 
-// Arrow Function Break Down
-
-// 1. Remove the word "function" and place arrow between the argument and opening body bracket
-(a) => {
-    return a + 100;
-}
-
-// 2. Remove the body braces and word "return" -- the return is implied.
-(a) => a + 100;
-
-// 3. Remove the argument parentheses
-a => a + 100;
+pyramid(5);
