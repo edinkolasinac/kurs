@@ -2,114 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDo App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-    <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>
-Example of Label tag
-</title>
-<style>
-/* The following tag selector body use the font-family and background-color properties for body of a page*/
+  <h1>todos</h1>
+  <form id="form">
+    <input type="text" id="input" class="input" placeholder="Enter your todo" autocomplete="off" />
+    <ul class="todos" id="todos"></ul>
+    <button type="submit">Unesi</button>
+  </form>
 
-body {
-font-family: Calibri, Helvetica, sans-serif;
-background-color: pink;
-} 
-/* Following container class used padding for generate space around it, and also use a background-color for specify the color lightblue as a background */  
-.container {
-padding: 50px;
-background-color: lightblue;
-}
-/* The following tag selector input use the different properties for the text filed. */
-input[type=text] {
-  width: 100%;
-  padding: 15px;
-margin: 5px 0 22px 0;
-display: inline-block;
- border: none;
- background: #f1f1f1;
-}
-input[type=text]:focus {
-background-color: orange;
-outline: none;
-}
- div {
-            padding: 10px 0;
-}    
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-/* The following tag selector button uses the different properties for the Button. */
-button {
-  background-color: #4CAF50;
-  color: white;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  padding: 16px 20px;
-  width: 100%;
-  opacity: 0.9;
-}
-/* The following tag selector hover uses the opacity property for the Button which select button when you mouse over it. */
-button:hover {
-opacity: 1;
-}
-</style>
-</head>
-<body>
-<form>
-<div class="container">
-<center>  <h1> Registration Form</h1> </center>
-<hr>
-<label for="firstname"> 
-Firstname 
-</label> 
-<input type="text" id="firstname" name="ftname" placeholder= "Firstname" size="15" required /> 
-<label for="middlename"> 
-Middlename: 
-</label> 
-<input type="text" id="middlename" name="mname" placeholder="Middlename" size="15" required /> 
-<label for="lastname"> 
-Lastname: 
-</label>  
-<input type="text" id="lastname" name="ltname" placeholder="Lastname" size="15"required /> 
-<div>
-<label for="gender"> 
-Gender :
-</label>
-<br>
-<input type="radio" id="gender" value="Male" name="gender" checked > Male 
-<input type="radio" id="gender" value="Female" name="gender"> Female 
-<input type="radio" id="gender" value="Other" name="gender"> Other
-
-</div>
-<label for="Phone"> 
-Phone:
-</label>
-<input type="text" name="country code" placeholder="Country Code"  value="+381" size="2"/> 
-<input type="text" id="Phone" name="phone" placeholder="phone no." size="10"/ required> 
-<label for="email"> 
-Email
-</label>
-<input type="text" id="email" placeholder="Enter Email" name="email" required>
-<button type="submit" value="submit">Submit</button>
-<button type="reset" value="submit">Reset</button>
-</form>
 </body>
+
 </html>
-
- 
-
-    <script src="script.js"></script>
-</body>
-
-</html>m
