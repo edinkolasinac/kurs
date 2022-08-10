@@ -1,7 +1,13 @@
-const button = document.querySelector('button')
-function pali() {
-  button.classList.toggle('alt.color')
+let kniga = [{
 
-}
+  name: 'good times'
+}]
 
-button.addEventListener('click', pali);
+const movie = kniga.find(movie => {
+  return kniga.includes('good timess');
+})
+
+
+const duzina = kniga.find(b => b.name.length() = 0);
+
+
